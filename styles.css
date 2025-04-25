@@ -1,29 +1,12 @@
-:root {
-  --rojo: rgb(171, 56, 56);
-  --verde: rgb(1, 167, 73);
-  --azul: rgb(79, 170, 203);
-  --piel-encendido: rgb(232, 128, 75);
-  --piel: rgb(252, 216, 193);
-}
+/* Estilos generales */
 
-/* Colores personalizados */
-.bg-rojo { background-color: var(--rojo) !important; }
-.bg-verde { background-color: var(--verde) !important; }
-.bg-azul { background-color: var(--azul) !important; }
-.bg-piel { background-color: var(--piel) !important; }
-
-.text-rojo { color: var(--rojo) !important; }
-.text-verde { color: var(--verde) !important; }
-.text-azul { color: var(--azul) !important; }
-
-/* Enlaces estilo navbar */
 a {
   text-decoration: none;
-  color: var(--rojo);
+  color: #333;
   font-weight: 500;
 }
 
 a:hover {
-  color: darkred;
+  color: #000;
   text-decoration: underline;
 }
