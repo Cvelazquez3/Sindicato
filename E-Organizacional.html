@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estructura Organizacional - Sindicato Libre Democrático de Trabajadores al Servicio del Ayuntamiento de Cuauhtémoc</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --azul: rgb(79, 170, 203);
+      --rojo: rgb(171, 56, 56);
+    }
+
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1, h2 {
+      color: var(--rojo);
+    }
+
+    .org-box {
+      border: 2px solid var(--azul);
+      padding: 12px;
+      border-radius: 8px;
+      background-color: white;
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .org-box:hover {
+      transform: scale(1.05);
+      z-index: 1;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .tooltip-inner {
+      max-width: 250px;
+      text-align: left;
+    }
+
+    .line-down {
+      height: 20px;
+      width: 2px;
+      background-color: #ccc;
+      margin: 0 auto;
+    }
+
+    .line-horizontal {
+      height: 2px;
+      width: 100%;
+      background-color: #ccc;
+      margin: 10px 0;
+    }
+
+    .org-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .org-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center mb-4">Estructura Organizacional</h1>
+    <div class="text-center text-muted mb-5">Sindicato Libre Democrático de Trabajadores al Servicio del Ayuntamiento de Cuauhtémoc</div>
+
+    <div class="org-container">
+
+      <!-- Secretaría General -->
+      <div class="org-row">
+        <div class="org-box" data-bs-toggle="tooltip" title="Representa, coordina y lidera al sindicato en todos sus aspectos administrativos, organizativos y de representación externa.">
+          <strong>Secretaria General</strong><br>Licda. Claudia Magdala Zurita Alejandre
+        </div>
+      </div>
+
+      <!-- Línea -->
+      <div class="line-down"></div>
+
+      <!-- Segunda fila -->
+      <div class="org-row">
+        <div class="org-box" data-bs-toggle="tooltip" title="Administra los recursos económicos, presupuestos, cuotas y rendición de cuentas.">
+          <strong>Secretaria de Finanzas</strong><br>C. Magda Georgina Cárdenas Ramirez
+        </div>
+        <div class="org-box" data-bs-toggle="tooltip" title="Planifica eventos, asambleas, afiliaciones y la estructura operativa del sindicato.">
+          <strong>Secretaria de Organización</strong><br>Profr. Norberto Rodríguez Rojas
+        </div>
+        <div class="org-box" data-bs-toggle="tooltip" title="Redacta, conserva y archiva actas de reuniones, acuerdos y documentación oficial.">
+          <strong>Secretaria de Actas y Acuerdos</strong><br>C. Anabel Ramírez Velasco
+        </div>
+      </div>
+
+      <!-- Línea -->
+      <div class="line-down"></div>
+
+      <!-- Tercera fila -->
+      <div class="org-row">
+        <div class="org-box" data-bs-toggle="tooltip" title="Encargada de la difusión de información, redes sociales, boletines y relaciones públicas.">
+          <strong>Secretaria de Comunicación</strong><br>C. Ma Esther Vizcaíno Galindo
+        </div>
+        <div class="org-box" data-bs-toggle="tooltip" title="Atiende y gestiona disputas laborales, quejas y conflictos con empleadores o internos.">
+          <strong>Secretaria de Conflictos</strong><br>Lic. Irma Guadalupe Pulido Verduzco
+        </div>
+      </div>
+
+      <!-- Línea -->
+      <div class="line-down"></div>
+
+      <!-- Comité de Vigilancia -->
+      <h2 class="mt-5 mb-3">Comité de Vigilancia</h2>
+      <div class="org-row">
+        <div class="org-box" data-bs-toggle="tooltip" title="Vigilar que las acciones del sindicato se ajusten a los estatutos, reglamentos internos y la legislación laboral vigente.">
+          <strong>Presidente</strong><br>C. Felipe Zambrano González
+        </div>
+        <div class="org-box" data-bs-toggle="tooltip" title="Redactar y custodiar las actas del comité. Organizar y archivar documentos de vigilancia y control.">
+          <strong>Secretario</strong><br>C. Francisco Cortez Morán
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(el => new bootstrap.Tooltip(el));
+  </script>
+</body>
+</html>
